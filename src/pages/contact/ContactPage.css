@@ -1,0 +1,84 @@
+
+
+.input-form{
+    min-width: 200px;
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: .8rem ;
+    border: 0px solid rgba(33,33,33, .5);
+    border-radius: 3px;
+}
+.input-form:focus{
+    outline: none;
+}
+.placeholder-fail::placeholder{color: tomato;}
+#email-label{
+    display: none;
+    font-size: 1.5rem;
+    color: tomato;
+    padding: 0 1rem;
+}
+@keyframes animeemailfail{
+    0%{transform: translate(0, 1rem); opacity: 0;}
+    25%{transform: translate(0,0); opacity: 1;}
+    50%{transform: translate(0, .5rem)}
+    75%{transform: translate(0, 0)}
+    100%{transform: translate(0, .2rem);}
+
+}
+#message{
+    min-width: 200px;
+    width: 80%;
+    padding: 1rem;
+    margin: .8rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    border: 0px solid rgba(33,33,33, .5);
+}
+#message:focus{
+    outline: none;
+}
+#form-contact-btn{
+    position: relative;
+    min-width: 200px;
+    width: 70%;
+    padding: 1rem;
+    margin: .8rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--main-font);
+    color: var(--dark-color);
+    text-transform: uppercase;
+    border: 1px solid rgba(21,21,21, .1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .5s ease-out;
+}
+#form-contact-btn:hover{
+    color: white;
+    font-weight: 500;
+    background: var(--hover-color);
+}
+#form-contact-btn:active{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+}
+#fail-msgbox{
+    display: none;
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: .8rem;
+    transition: .7s;
+}
+@keyframes failmsgpopup{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+/* responsive */
+
+@media(max-width: 768px){
+    .input-form{width: 90%;}
+    #message{width: 90%;}
+}

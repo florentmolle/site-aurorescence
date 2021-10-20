@@ -1,0 +1,30 @@
+:root{
+    --hover-color: rgba(1,168,98,.7);
+    --dark-color: rgba(21,21,21, .85);
+    --light-color: #f7f3f0;
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Lora', serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+}
+body{
+    width: 100vw;
+    height: 100%;
+    background: #f7f3f0;
+    overscroll-behavior: none;
+    font-smooth: auto;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    scroll-behavior: smooth
+}
+.smooth-active{
+    scroll-behavior: smooth;
+}
