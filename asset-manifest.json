@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/site-aurorescence/static/css/main.9e412d47.chunk.css",
+    "main.js": "/site-aurorescence/static/js/main.a75707fa.chunk.js",
+    "main.js.map": "/site-aurorescence/static/js/main.a75707fa.chunk.js.map",
+    "runtime-main.js": "/site-aurorescence/static/js/runtime-main.82f9d5f2.js",
+    "runtime-main.js.map": "/site-aurorescence/static/js/runtime-main.82f9d5f2.js.map",
+    "static/js/2.78ca901f.chunk.js": "/site-aurorescence/static/js/2.78ca901f.chunk.js",
+    "static/js/2.78ca901f.chunk.js.map": "/site-aurorescence/static/js/2.78ca901f.chunk.js.map",
+    "index.html": "/site-aurorescence/index.html",
+    "static/css/main.9e412d47.chunk.css.map": "/site-aurorescence/static/css/main.9e412d47.chunk.css.map",
+    "static/js/2.78ca901f.chunk.js.LICENSE.txt": "/site-aurorescence/static/js/2.78ca901f.chunk.js.LICENSE.txt",
+    "static/media/arrow-right.b2fd2e53.svg": "/site-aurorescence/static/media/arrow-right.b2fd2e53.svg",
+    "static/media/c-01.218c35bb.jpg": "/site-aurorescence/static/media/c-01.218c35bb.jpg",
+    "static/media/c-02.b877f780.jpg": "/site-aurorescence/static/media/c-02.b877f780.jpg",
+    "static/media/c-03.bdade0a2.jpg": "/site-aurorescence/static/media/c-03.bdade0a2.jpg",
+    "static/media/c-04.9797d1c5.jpg": "/site-aurorescence/static/media/c-04.9797d1c5.jpg",
+    "static/media/img01.3637f07e.jpg": "/site-aurorescence/static/media/img01.3637f07e.jpg",
+    "static/media/img02.78a3a32d.jpg": "/site-aurorescence/static/media/img02.78a3a32d.jpg",
+    "static/media/img03.49f939b2.jpg": "/site-aurorescence/static/media/img03.49f939b2.jpg",
+    "static/media/img04.14a1414a.jpg": "/site-aurorescence/static/media/img04.14a1414a.jpg",
+    "static/media/img05.6f7f7b01.jpg": "/site-aurorescence/static/media/img05.6f7f7b01.jpg",
+    "static/media/img06.a1347402.jpg": "/site-aurorescence/static/media/img06.a1347402.jpg",
+    "static/media/img07.56766ef5.jpg": "/site-aurorescence/static/media/img07.56766ef5.jpg",
+    "static/media/img08.7db65453.jpg": "/site-aurorescence/static/media/img08.7db65453.jpg",
+    "static/media/leafColor02.2d88c0cf.svg": "/site-aurorescence/static/media/leafColor02.2d88c0cf.svg",
+    "static/media/leafColor03.81b52ccd.svg": "/site-aurorescence/static/media/leafColor03.81b52ccd.svg",
+    "static/media/logoAI02.8790a1b0.svg": "/site-aurorescence/static/media/logoAI02.8790a1b0.svg",
+    "static/media/profile-img.3491de1a.jpg": "/site-aurorescence/static/media/profile-img.3491de1a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82f9d5f2.js",
+    "static/js/2.78ca901f.chunk.js",
+    "static/css/main.9e412d47.chunk.css",
+    "static/js/main.a75707fa.chunk.js"
+  ]
+}
