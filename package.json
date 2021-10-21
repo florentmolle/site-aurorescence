@@ -2,6 +2,7 @@
   "name": "site-auro",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://florentmolle.github.io/site-aurorescence",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -16,6 +17,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
