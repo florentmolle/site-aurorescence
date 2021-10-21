@@ -62,6 +62,12 @@ const Menu = ({menuOpen, toggleMenu}) => {
                             <span className="menu-link-text">Professionnel</span>
                         </div>
                     </Link>
+                    <Link className="menu-link" to="/site-aurorescence/faq" 
+                    onClick={toggleMenu}>
+                        <div>
+                            <span className="menu-link-text">Faq</span>
+                        </div>
+                    </Link>
                     <Link className="menu-link" to="/site-aurorescence/apropos" 
                     onClick={toggleMenu}>
                         <div>

@@ -7,7 +7,6 @@ import { Scrollbar } from 'smooth-scrollbar-react';
 import Footer from '../../components/Footer'
 import QuiSuisJe from './QuiSuisJe';
 import Services from './Services';
-import Faq from './Faq';
 import Contact from './Contact';
 import {QsjTxt} from './HomeData'
 
@@ -140,7 +139,6 @@ const Home = () => {
                     <TitleUnder>Aurorescence</TitleUnder>
                     <QuiSuisJe {...QsjTxt} />
                     <Services/>
-                    <Faq/>
                     <Contact/>
             </HomeWrapper>
             <Footer scrollTop={handleScrollTop}/>

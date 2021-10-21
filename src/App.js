@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Menu from './components/Menu';
 import Pro from './pages/pro/Pro';
 import Tourisme from './pages/tourisme/Tourisme';
+import Faq from './pages/faq/Faq';
 
 
 
@@ -54,6 +55,7 @@ function App() {
               <Route path='/site-aurorescence/tourisme'>
                 <Tourisme {...TourismeData}/>
               </Route>
+              <Route path="/site-aurorescence/faq" component={Faq}/>
             </Switch>
           </Router>
   );
