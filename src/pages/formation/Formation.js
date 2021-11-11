@@ -87,36 +87,11 @@ const ImgContentOnebis = styled.img`
         width: 50vw;
     };
 `
-
-const TextTopBox = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    @media(max-width: 1000px){
-        justify-content: center;
-        text-align: center;
-    };
-`
-const TextTop = styled.p`
-    width: 60%;
-    font-size: clamp(1.8rem, 3vw, 3.3rem);
-    font-weight: 400;
-    margin: 15rem 0 7rem 0;
-    animation: ${appear} .6s 1s ease-out both;
-    @media(max-width: 768px){
-        width: 80%;
-        margin: 5rem 0;
-    };
-    @media(max-width: 350px){
-        width: 100%;
-    };
-`
 const ContentOneBox = styled.article`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 17rem;
     animation: ${appear} .6s 1s ease-out both;
     @media(max-width: 1000px){
         justify-content: center;
@@ -125,8 +100,35 @@ const ContentOneBox = styled.article`
         margin-bottom: 7rem;
     };
 `
-const TextContentOne = styled.p`
+const TextTopBox = styled.div`
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
+    @media(max-width: 1000px){
+        width: 100%;
+        padding-left: 0%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    };
+`
+const TextTop = styled.p`
+    width: 100%;
+    font-size: clamp(1.8rem, 3vw, 3.3rem);
+    font-weight: 400;
+    margin: 5rem 0;
+    @media(max-width: 768px){
+        width: 80%;
+        margin: 5rem 0;
+    };
+    @media(max-width: 350px){
+        width: 100%;
+    };
+`
+const TextContentOne = styled.p`
+    width: 100%;
     font-size: clamp(1.7rem, 3vw, 2.5rem);
     font-weight: 300;
     padding: 2rem 0;
@@ -144,6 +146,9 @@ const TextContentOne = styled.p`
 const TextDescBox = styled.div`
     width: 40%;
     min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media(max-width: 1000px){
         width: 80%;
         min-width: 250px;
@@ -169,10 +174,11 @@ const LeafLogo = styled.img`
 const FormationTitleTwo = styled.h2`
     font-size: clamp(2rem, 5vw, 7rem);
     font-family: 'Lora', serif;
-    font-weight: 200;
+    font-weight: lighter;
     font-style: italic;
     text-align: center;
-    margin: 0 0 20rem 0;
+    margin: 10rem 0 20rem 0;
+    opacity: .85;
     @media(max-width: 425px){
         margin-bottom: 7rem;
     };
@@ -213,7 +219,13 @@ const ImgContentTwo = styled.img`
         min-width: 250px;
     };
 `
-
+const Separator = styled.div`
+    width: 50%;
+    height: .2rem;
+    background: var(--dark-color);
+    opacity: .15;
+    margin: 10rem 0;
+`
 
 
 const Formation= ({
@@ -257,17 +269,19 @@ const Formation= ({
                         <ImgContentOne src={imgOne}/>
                         <ImgContentOnebis src={imgOnebis}/>
                     </ImgContentBox>
-                    <TextTopBox>
-                        <TextTop>{textTop}</TextTop>
-                    </TextTopBox>
+                    <Separator/>
                     <ContentOneBox>
-                        <TextContentOne>{textTwo}</TextContentOne>
+                        <TextTopBox>
+                            <TextTop>{textTop}</TextTop>
+                            <TextContentOne>{textTwo}</TextContentOne>
+                        </TextTopBox>
                         <TextDescBox>
                             <TextLeaf><LeafLogo src={LeafLogoSrc}/>{textLeafOne}</TextLeaf>
                             <TextLeaf><LeafLogo src={LeafLogoSrc}/>{textLeafTwo}</TextLeaf>
                             <TextLeaf><LeafLogo src={LeafLogoSrc}/>{textLeafThree}</TextLeaf>
                         </TextDescBox>
                     </ContentOneBox>
+                    <Separator/>
                     <FormationTitleTwo>" Devenez spécialiste de la taille<br></br>adaptée à chaque espèce fruitière "</FormationTitleTwo>
                     <ContentTwoBox>
                         <TextLeafBox>

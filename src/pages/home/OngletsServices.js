@@ -37,6 +37,10 @@ const OngletsTitleBox = styled.div`
     }
 `
 const OngletsContentBox = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     font-size: 3rem;
     font-weight: 100;
     opacity: ${props => props.opacity};
@@ -44,9 +48,8 @@ const OngletsContentBox = styled.div`
     transform: translateY(${props => props.goDown});
 `
 const OngletsTitle = styled.p`
-    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-size: clamp(2.8rem, 4vw, 3.5rem);
     font-weight: 100;
-    text-transform: uppercase;
     margin-top: 1rem;
 `
 const OngletsCross =styled.p`
@@ -68,15 +71,19 @@ const OngletsCross =styled.p`
     }
 `
 const ESPbox = styled.div`
+    width: 30rem;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 5rem;
+    margin: 0 2rem 5rem 0;
+    &:hover img{
+        transform: translate(2rem);
+    }
 `
 
 const EnSavoirPlus = styled(Link)`
     font-size: clamp(1.8rem, 2vw, 2.5rem);
     color: var(--dark-color);
-    text-decoration: underline 2px;
+    text-decoration: none;
 `
 const LineBreak = styled.hr`
     border-top: 0.5px solid #212121;
@@ -84,6 +91,7 @@ const LineBreak = styled.hr`
 const ArrowRight = styled.img`
     width: 5rem;
     margin-left: 1rem;
+    transition: .3s;
 `
 
 

@@ -39,9 +39,8 @@
 }
 .menu-link{
     position: relative;
-    font-size: clamp(4rem, 5vw, 5.5rem);
-    font-family: 'Lora', serif;
-    font-weight: 100;
+    font-size: clamp(5rem, 5vw, 6.5rem);
+    font-weight: 300;
     text-decoration: none;
     color: var(--dark-color);
     margin: 1.5vh 0;
@@ -126,7 +125,7 @@
 .menu-link:hover > div:nth-child(2) span{
     transform: translate3d(0, 0%, 0) rotateX(0deg);
 }
-span{font-size: clamp(3rem, 5vw, 5.5rem);}
+span{font-size: clamp(2.5rem, 5vw, 7rem);}
 
 
 /* RESPONSIVE */

@@ -63,6 +63,10 @@ const FooterMail = styled.a`
     font-size: clamp(1rem, 2vw, 1.5rem);
     margin-right: .8rem;
     color: var(--dark-color);
+    transition: .3s;
+    &:hover{
+       color: var(--hover-color);
+    }
 `
 const FooterLogo = styled.img`
     width: 60%;
@@ -71,11 +75,6 @@ const FooterTdr = styled.p`
     font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 100;
     padding-top: 1.5rem;
-`
-const FooterHdp = styled.p`
-    font-size: clamp(1.5rem, 2vw, 3rem);
-    font-weight: 300;
-    color: var(--dark-color);
 `
 const FooterArrowUp = styled.a`
     font-size: clamp(2rem, 4vw, 3.5rem);
@@ -116,7 +115,6 @@ const Footer = ({scrollTop}) => {
                     <FooterTdr>Tous droits réservés ©</FooterTdr>
                 </FooterBoxMiddle>
                 <FooterBoxRight>
-                    <FooterHdp>haut de page</FooterHdp>
                     <FooterArrowUp onClick={scrollTop} href="#"><i className="fas fa-arrow-up"></i></FooterArrowUp>
                 </FooterBoxRight>
             </FooterContainer>

@@ -22,11 +22,13 @@ const ContactWrapper = styled.main`
     };
 `
 const ContactFormTitle = styled.h1`
-    font-size: clamp(3rem, 7vw, 17rem);
-    margin-bottom: 5rem;
+    font-size: clamp(2.5rem, 5vw, 7rem);
     font-family: 'Lora', serif;
     font-weight: 200;
     font-style: italic;
+    text-align: center;
+    padding: 7rem 0;
+    margin-bottom: 10rem;
 `
 
 const ContactFormContainer = styled.section`
@@ -272,7 +274,7 @@ const ContactPage = () => {
         style={{height: "100vh"}}
         renderByPixels={true}>
         <ContactWrapper>
-            <ContactFormTitle>Une question ?</ContactFormTitle>
+            <ContactFormTitle>Contactez-nous</ContactFormTitle>
             <ContactFormContainer>
                 <ContactInfo>
                     <ContactBox>

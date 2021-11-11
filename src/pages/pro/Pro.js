@@ -87,6 +87,7 @@ const TextContentOne = styled.p`
     font-weight: 300;
     padding: 2rem 0;
     margin: 5rem;
+    animation: ${appear} .6s 1.2s ease-out both;
 `
 const TextDescBox = styled.div`
     min-width: 450px;
@@ -100,6 +101,7 @@ const TextDescBox = styled.div`
     @media(max-width: 350px){
         width: 100%;
     };
+    animation: ${appear} .6s 1.3s ease-out both;
 `
 const TextLeaf = styled.p`
     font-size: clamp(1.5rem, 3vw, 2.5rem);

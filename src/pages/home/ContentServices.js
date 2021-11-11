@@ -32,10 +32,12 @@ const ContentTitle = styled.h3`
 const ContentSubtitle = styled.p`
     font-size: clamp(1.8rem, 2vw, 2.5rem);
     margin: 4rem 0;
+    font-weight: 400;
 `
 const ContentText = styled.p`
     margin: 4rem 0;
     font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-weight: 400;
 `
 
 

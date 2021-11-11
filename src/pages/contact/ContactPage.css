@@ -3,7 +3,7 @@
 .input-form{
     min-width: 200px;
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem;
     margin: .8rem ;
     border: 0px solid rgba(33,33,33, .5);
@@ -32,7 +32,7 @@
     width: 80%;
     padding: 1rem;
     margin: .8rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     border: 0px solid rgba(33,33,33, .5);
 }
@@ -45,13 +45,13 @@
     width: 70%;
     padding: 1rem;
     margin: .8rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     font-family: var(--main-font);
     color: var(--dark-color);
     text-transform: uppercase;
-    border: 1px solid rgba(21,21,21, .1);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
     overflow: hidden;
     transition: .5s ease-out;
@@ -60,6 +60,8 @@
     color: white;
     font-weight: 500;
     background: var(--hover-color);
+    transition: .2s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 2px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #form-contact-btn:active{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
@@ -67,10 +69,11 @@
 #fail-msgbox{
     display: none;
     width: 70%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 1rem;
     margin: .8rem;
     transition: .7s;
+    color: var(--dark-color);
 }
 @keyframes failmsgpopup{
     from{opacity: 0}

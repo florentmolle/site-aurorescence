@@ -10,6 +10,7 @@ import Menu from './components/Menu';
 import Pro from './pages/pro/Pro';
 import Tourisme from './pages/tourisme/Tourisme';
 import Faq from './pages/faq/Faq';
+import Login from './components/Login';
 
 
 
@@ -27,7 +28,12 @@ function App() {
 
 
 
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(true);
+  const [adminBoard, setAdminBoard] = useState(false);
+
+  const toggleNavbar = ()=>{
+    setAdminBoard(!adminBoard)
+  }
 
   const toggleMenu = ()=>{
     setMenuOpen(!menuOpen)
@@ -38,7 +44,7 @@ function App() {
     
           <Router>
             <ScrollToTop/>
-            <Navbar menuOpen={menuOpen} toggleMenu={toggleMenu}/>
+            <Navbar menuOpen={menuOpen} adminBoard={adminBoard} toggleMenu={toggleMenu}/>
             <Menu menuOpen={menuOpen} toggleMenu={toggleMenu}/>
             <Switch>
               <Route exact path='/site-aurorescence' component={Home}/>
@@ -56,6 +62,9 @@ function App() {
                 <Tourisme {...TourismeData}/>
               </Route>
               <Route path="/site-aurorescence/faq" component={Faq}/>
+              <Route path='/site-aurorescence/login'>
+                <Login setAdminBoard={setAdminBoard} toggleNavbar={toggleNavbar}/>
+              </Route>
             </Switch>
           </Router>
   );

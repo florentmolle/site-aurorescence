@@ -29,10 +29,10 @@ const QsjContainer = styled.section`
     };
 `
 const TitleQsj = styled.p`
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 300;
+    margin: 10rem 0;
+    font-size: clamp(2.5rem, 5vw, 5.5rem);
+    font-weight: 400;
     color: var(--dark-color);
-    text-transform: uppercase;
     animation: ${appear} .6s .5s ease-out both;
 `
 const LeafQsj = styled.img`
@@ -88,7 +88,7 @@ const ProfilePic = styled.img`
     };
 `
 const ProfileText = styled.p`
-    font-size: clamp(1.8rem, 3vw, 2rem);
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
     font-weight: 300;
     margin: 1.5rem ;
 `

@@ -1,0 +1,20 @@
+#fail-response-send{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 3rem auto 0;
+    transition: .7s;
+}
+#deleted-msg{
+    justify-content: center;
+    align-items: center;
+    /* width: 70%; */
+    font-size: 1.8rem;
+    margin: auto;
+    transition: .7s;
+    transform: translateY(1.5rem);
+    opacity: 0;
+}

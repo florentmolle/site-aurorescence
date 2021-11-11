@@ -2,28 +2,23 @@ import React, {useState, useEffect} from 'react';
 import { Scrollbar } from 'smooth-scrollbar-react';
 import styled from 'styled-components';
 
-import database from '../firebase';
+import firebase from '../firebase';
 
 
 import './QuestionBox.css'
 
 const QbContainer = styled.div`
     width: 80%;
-    max-width: 120rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 3rem auto;
     @media(max-width: 425px){
-        width: 90%;
-    }
-    @media(max-width: 350px){
-        width: 90%;
+        width: 95%;
     }
 `
 const AnswerBox = styled.div`
     width: 100%;
-    max-height: 50rem;
+    max-height: 60rem;
     padding: 0 2rem;
     margin-bottom: 5rem;
     overflow: hidden;
@@ -34,9 +29,9 @@ const AnswerBox = styled.div`
     }
 `
 const AnswerTitle = styled.h2`
-    font-size: clamp(2rem, 5vw, 2.5rem);    
+    font-size: clamp(2rem, 5vw, 3rem);    
     font-weight: 400;
-    font-family: var(--title-font);
+    font-family: var(--main-font);
     color: var(--dark-color);
     margin-top: 5rem;
     padding: 2rem;
@@ -69,7 +64,7 @@ const QuestionBox = () => {
         failMsgFaq.style.opacity = '1';
         failMsgFaq.style.background = 'var(--hover-color)';
         failMsgFaq.style.animation = 'failmsgfaqpopup .2s ease-out';
-        failMsgFaqText.innerHTML = "Votre question à bien été enregistré, vous pouvez la retrouver ci-dessous.<br> J'y répondrais dès que possible. <br> Merci";
+        failMsgFaqText.innerHTML = "Votre question à bien été enregistré, vous pouvez la retrouver ci-dessous, une fois que j'y aurais répondu.<br> Merci";
         setTimeout(() => {
             failMsgFaq.style.opacity = '0';
         }, 6000);
@@ -91,31 +86,43 @@ const QuestionBox = () => {
             return;
         }else{
             e.preventDefault();
-            database.ref("newMsg").push({
-                name : name,
-                message : message,
-              }).catch(alert);
-            setName('');
-            setMessage('');
-            let nameInput = document.querySelector('#question-firstname');
-            let questionInput = document.querySelector('#question-textarea');
-            nameInput.classList.remove('no-name');
-            questionInput.classList.remove('no-name');
-            successMessageFaq();
+            firebase.firestore().collection("newquestions").add({
+                nom : name,
+                question : message,
+              }).then(()=>{
+                    console.log('send !');
+                    setName('');
+                    setMessage('');
+                    let nameInput = document.querySelector('#question-firstname');
+                    let questionInput = document.querySelector('#question-textarea');
+                    nameInput.classList.remove('no-name');
+                    questionInput.classList.remove('no-name');
+                    successMessageFaq();
+              }).catch(err => {
+                    console.log(err.message);
+                    let nameInput = document.querySelector('#question-firstname');
+                    let questionInput = document.querySelector('#question-textarea');
+                    nameInput.classList.add('no-name');
+                    questionInput.classList.add('no-name');
+                    failMessageFaq();
+                    let failMsgFaqText = document.querySelector('#fail-faq p');
+                    failMsgFaqText.innerHTML = "Votre question n'a pas pu être envoyé, réessayez plus tard.";
+
+              });
         }
     }
 
     const getData = ()=>{
-        database.ref("newMsg").on('value', snap =>{
+        firebase.firestore().collection('newresponse').onSnapshot(snapshot => {
             const saveData = [];
-            snap.forEach((item)=>{
-                saveData.push(item);
+            snapshot.forEach((snap)=>{
+                saveData.push(snap)
             });
-            setNewMsg(saveData);
-        });
-      };
+            setNewMsg(saveData)
+        })
+    };
     useEffect(()=>{
-          getData()
+          getData();
     }, [])
 
 
@@ -151,17 +158,17 @@ const QuestionBox = () => {
                     {Object.entries(newMsg).map(([id,msg])=>{
 
                         return(
-                            <div key={msg.key} id="answer-contentbox">
+                            <div key={id} id="answer-contentbox">
                                 <div id="answer-content">
                                     <div>
-                                        <p>De : {msg.val().name}</p>
+                                        <p>De : {msg.data().nom}</p>
                                         <div id="answer-content-msg">
-                                            <p>{msg.val().message}</p>
+                                            <p>{msg.data().question}</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="answer-answer">
-                                    <p>{msg.val().reponse}</p>
+                                    <p>{msg.data().reponse}</p>
                                 </div>
                             </div>
                         )

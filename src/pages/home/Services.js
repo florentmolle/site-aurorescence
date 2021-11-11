@@ -7,7 +7,7 @@ import LeafServicesSrc from '../../img/leafColor03.svg'
 
 
 const ServicesContainer = styled.section`
-    width: 80%;
+    width: 90%;
     margin-top: 17rem;
     @media(max-width: 500px){
         width: 95%;
@@ -15,7 +15,7 @@ const ServicesContainer = styled.section`
     
 `
 const TitleServices = styled.p`
-    font-size: clamp(2rem, 5vw, 3.5rem);    
+    font-size: clamp(2rem, 5vw, 5.5rem);    
     font-weight: 400;
     color: var(--dark-color);
     text-transform: uppercase;
@@ -28,7 +28,7 @@ const LeafServices = styled.img`
     }
 ` 
 const TextServicesSmall = styled.p`
-    font-size: clamp(1.8rem, 2vw, 2rem);
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
     font-weight: 300;
     margin: 2rem 0 10rem 5rem;
     @media(max-width: 350px){

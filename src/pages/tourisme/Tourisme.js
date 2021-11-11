@@ -3,8 +3,6 @@ import { Scrollbar } from 'smooth-scrollbar-react';
 import styled, {keyframes} from 'styled-components';
 import Footer from '../../components/Footer';
 
-import LeaflogoSrc from '../../img/leafColor03.svg'
-
 
 
 const appearText = keyframes`
@@ -58,10 +56,10 @@ const TextleafBox = styled.article`
     grid-template-columns: repeat(2, 1fr);
     row-gap: 5rem;
     column-gap: 2rem;
-    margin-top: 10rem;
+    margin-top: 15rem;
     @media(max-width: 768px){
         grid-template-columns: repeat(1, 1fr);
-    };
+    }
 `
 const TextleafInnerBox = styled.div`
     height: 100%;
@@ -119,21 +117,12 @@ const HoverImgTextLayer = styled.p`
 const TextLeaf = styled.p`
     position: relative;
     width: 80%;
-    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
     margin: 2rem 4rem;
     @media(max-width: 425px){
         width: 100%;
     };
 `
-const LeafLogo = styled.img`
-    width: 4rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-115%, -50%)
-`
-
-
 
 
 const Tourisme = ({
@@ -142,9 +131,13 @@ const Tourisme = ({
     imgCategoryThree,
     imgCategoryFour,
     subtitle,
+    textOneStrong,
     textOne,
+    textTwoStrong,
     textTwo,
+    textThreeStrong,
     textThree,
+    textFourStrong,
     textFour
 }) => {
 
@@ -172,36 +165,36 @@ const Tourisme = ({
                     <TourismeSubtitle>{subtitle}</TourismeSubtitle>
                     <TextleafBox>
                         <TextleafInnerBox>
-                            <TextLeaf><LeafLogo src={LeaflogoSrc}/>{textOne}</TextLeaf>
                             <ImgCategoryBox>
                                 <ImgTourismeCategory src={imgCategoryOne}/>
                                 <HoverImgBgLayer/>
                                 <HoverImgTextLayer>en savoir plus</HoverImgTextLayer>
                             </ImgCategoryBox>
+                            <TextLeaf><strong>{textOneStrong}</strong>{textOne}</TextLeaf>
                         </TextleafInnerBox>
                         <TextleafInnerBox>
-                            <TextLeaf><LeafLogo src={LeaflogoSrc}/>{textTwo}</TextLeaf>
                             <ImgCategoryBox>
                                 <ImgTourismeCategory src={imgCategoryTwo}/>
                                 <HoverImgBgLayer/>
                                 <HoverImgTextLayer>en savoir plus</HoverImgTextLayer>
                             </ImgCategoryBox>
+                            <TextLeaf><strong>{textTwoStrong}</strong>{textTwo}</TextLeaf>
                         </TextleafInnerBox>
                         <TextleafInnerBox>
-                            <TextLeaf><LeafLogo src={LeaflogoSrc}/>{textThree}</TextLeaf>
                             <ImgCategoryBox>
                                 <ImgTourismeCategory src={imgCategoryThree}/>
                                 <HoverImgBgLayer/>
                                 <HoverImgTextLayer>en savoir plus</HoverImgTextLayer>
                             </ImgCategoryBox>
+                            <TextLeaf><strong>{textThreeStrong}</strong>{textThree}</TextLeaf>
                         </TextleafInnerBox>
                         <TextleafInnerBox>
-                            <TextLeaf><LeafLogo src={LeaflogoSrc}/>{textFour}</TextLeaf>
                             <ImgCategoryBox>
                                 <ImgTourismeCategory src={imgCategoryFour}/>
                                 <HoverImgBgLayer/>
                                 <HoverImgTextLayer>en savoir plus</HoverImgTextLayer>
                             </ImgCategoryBox>
+                            <TextLeaf><strong>{textFourStrong}</strong>{textFour}</TextLeaf>
                         </TextleafInnerBox>
                     </TextleafBox>
                 </ContentWrapper>

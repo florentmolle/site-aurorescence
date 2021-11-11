@@ -12,7 +12,7 @@ const NavContainer = styled.nav`
     height: 8rem;
     position: fixed;
     top: 0;
-    display: flex;
+    display: ${props => props.adminBoard};
     justify-content: center;
     align-items: flex-end;
     z-index: 20;
@@ -80,12 +80,12 @@ const LogoLink = styled(Link)`
 `
 
 
-const Navbar = ({toggleMenu}) => {
+const Navbar = ({toggleMenu, adminBoard}) => {
 
 
     return (
         <>
-            <NavContainer>
+            <NavContainer adminBoard={adminBoard ? 'none' : 'flex'}>
                 <NavUl>
                     <ContactLink to="/site-aurorescence">Accueil</ContactLink>
                     <MenuLink onClick={toggleMenu}>Menu <LeafLogo src={LeafLogoSrc}/></MenuLink>
