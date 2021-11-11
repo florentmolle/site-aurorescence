@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/site-aurorescence/static/css/main.d71824e9.chunk.css",
-    "main.js": "/site-aurorescence/static/js/main.02b26fbd.chunk.js",
-    "main.js.map": "/site-aurorescence/static/js/main.02b26fbd.chunk.js.map",
+    "main.css": "/site-aurorescence/static/css/main.32989d96.chunk.css",
+    "main.js": "/site-aurorescence/static/js/main.7f19418a.chunk.js",
+    "main.js.map": "/site-aurorescence/static/js/main.7f19418a.chunk.js.map",
     "runtime-main.js": "/site-aurorescence/static/js/runtime-main.82f9d5f2.js",
     "runtime-main.js.map": "/site-aurorescence/static/js/runtime-main.82f9d5f2.js.map",
-    "static/js/2.1cef7618.chunk.js": "/site-aurorescence/static/js/2.1cef7618.chunk.js",
-    "static/js/2.1cef7618.chunk.js.map": "/site-aurorescence/static/js/2.1cef7618.chunk.js.map",
+    "static/js/2.b9f3b06e.chunk.js": "/site-aurorescence/static/js/2.b9f3b06e.chunk.js",
+    "static/js/2.b9f3b06e.chunk.js.map": "/site-aurorescence/static/js/2.b9f3b06e.chunk.js.map",
     "index.html": "/site-aurorescence/index.html",
-    "static/css/main.d71824e9.chunk.css.map": "/site-aurorescence/static/css/main.d71824e9.chunk.css.map",
-    "static/js/2.1cef7618.chunk.js.LICENSE.txt": "/site-aurorescence/static/js/2.1cef7618.chunk.js.LICENSE.txt",
+    "static/css/main.32989d96.chunk.css.map": "/site-aurorescence/static/css/main.32989d96.chunk.css.map",
+    "static/js/2.b9f3b06e.chunk.js.LICENSE.txt": "/site-aurorescence/static/js/2.b9f3b06e.chunk.js.LICENSE.txt",
     "static/media/arrow-right.b2fd2e53.svg": "/site-aurorescence/static/media/arrow-right.b2fd2e53.svg",
     "static/media/c-01.218c35bb.jpg": "/site-aurorescence/static/media/c-01.218c35bb.jpg",
     "static/media/c-02.b877f780.jpg": "/site-aurorescence/static/media/c-02.b877f780.jpg",
@@ -25,13 +25,13 @@
     "static/media/img08.7db65453.jpg": "/site-aurorescence/static/media/img08.7db65453.jpg",
     "static/media/leafColor02.2d88c0cf.svg": "/site-aurorescence/static/media/leafColor02.2d88c0cf.svg",
     "static/media/leafColor03.81b52ccd.svg": "/site-aurorescence/static/media/leafColor03.81b52ccd.svg",
-    "static/media/logoAI02.8790a1b0.svg": "/site-aurorescence/static/media/logoAI02.8790a1b0.svg",
+    "static/media/logoAI02.b8a285aa.svg": "/site-aurorescence/static/media/logoAI02.b8a285aa.svg",
     "static/media/profile-img.3491de1a.jpg": "/site-aurorescence/static/media/profile-img.3491de1a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.82f9d5f2.js",
-    "static/js/2.1cef7618.chunk.js",
-    "static/css/main.d71824e9.chunk.css",
-    "static/js/main.02b26fbd.chunk.js"
+    "static/js/2.b9f3b06e.chunk.js",
+    "static/css/main.32989d96.chunk.css",
+    "static/js/main.7f19418a.chunk.js"
   ]
 }
